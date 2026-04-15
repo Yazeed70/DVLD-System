@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5B1CE56C-5BFD-4F55-9C3D-16DEA684B58E}</ProjectGuid>
+    <ProjectGuid>{7A65E342-BF9D-4ABF-856F-3F4F7F7D3CE5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>DVLD_Presentation</RootNamespace>
     <AssemblyName>DVLD-Presentation</AssemblyName>
@@ -36,6 +36,10 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DVLD-Business, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DVLD-Business\bin\Debug\DVLD-Business.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="ProjectTheme1, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -433,12 +437,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DVLD-Business\DVLD_Business.csproj">
-      <Project>{b1c62464-e92a-44ac-b07f-7fa8ea848a10}</Project>
-      <Name>DVLD_Business</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Icons\aplication_list.png" />

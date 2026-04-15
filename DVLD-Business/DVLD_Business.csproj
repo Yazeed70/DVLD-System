@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1C62464-E92A-44AC-B07F-7FA8EA848A10}</ProjectGuid>
+    <ProjectGuid>{46A8427B-DCFC-4DAF-A14C-E3F4789A993D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DVLD_Business</RootNamespace>
@@ -31,32 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\DVLD-Presentation\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Grid.Base, Version=28.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\DVLD-Presentation\packages\Syncfusion.Grid.Base.28.2.5\lib\net462\Syncfusion.Grid.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Grid.Windows, Version=28.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\DVLD-Presentation\packages\Syncfusion.Grid.Windows.28.2.5\lib\net462\Syncfusion.Grid.Windows.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Licensing, Version=28.2462.5.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
-      <HintPath>..\DVLD-Presentation\packages\Syncfusion.Licensing.28.2.5\lib\net462\Syncfusion.Licensing.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Shared.Base, Version=28.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\DVLD-Presentation\packages\Syncfusion.Shared.Base.28.2.5\lib\net462\Syncfusion.Shared.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Shared.Windows, Version=28.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\DVLD-Presentation\packages\Syncfusion.Shared.Windows.28.2.5\lib\net462\Syncfusion.Shared.Windows.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.SpellChecker.Base, Version=28.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\DVLD-Presentation\packages\Syncfusion.SpellChecker.Base.28.2.5\lib\net462\Syncfusion.SpellChecker.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Tools.Base, Version=28.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\DVLD-Presentation\packages\Syncfusion.Tools.Base.28.2.5\lib\net462\Syncfusion.Tools.Base.dll</HintPath>
-    </Reference>
-    <Reference Include="Syncfusion.Tools.Windows, Version=28.2462.5.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
-      <HintPath>..\DVLD-Presentation\packages\Syncfusion.Tools.Windows.28.2.5\lib\net462\Syncfusion.Tools.Windows.dll</HintPath>
+    <Reference Include="DVLD-DataAccess">
+      <HintPath>..\..\DVLD-DataAccess\bin\Debug\DVLD-DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -81,12 +57,6 @@
     <Compile Include="clsPerson.cs" />
     <Compile Include="clsUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DVLD-DataAccess\DVLD_DataAccess.csproj">
-      <Project>{59595102-fc8b-4372-a091-35b74d19e3e7}</Project>
-      <Name>DVLD_DataAccess</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

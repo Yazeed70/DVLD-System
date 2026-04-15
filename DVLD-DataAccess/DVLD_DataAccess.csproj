@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59595102-FC8B-4372-A091-35B74D19E3E7}</ProjectGuid>
+    <ProjectGuid>{C1BE28AD-D036-4C77-964C-9EE4ACC6727A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DVLD_DataAccess</RootNamespace>
