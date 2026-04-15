@@ -8,6 +8,10 @@ namespace DVLD_DataAccess
 {
     internal class clsDataAccessSettings
     {
-        public static string connectionString = "Server=.;Database=DVLD;User Id=sa;Password=sa123456;";
+        // Use this connection string if you are using SQL Server Authentication:
+        public static string connectionString = "Server=.;Database=DVLD;User Id=Write_Your_ID_Here;Password=Write_Your_Password_Here;";
+
+        // OR use this connection string if you are using Windows Authentication (Integrated Security):
+        // public static string connectionString = "Server=.;Database=DVLD;Integrated Security=True;";
     }
 }
